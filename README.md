@@ -18,6 +18,17 @@ First you need to import the necessary packages and libraries from the Kaggle Mo
 after that you need to check the columns in the dataset.
 The file credits.csv contains attributes like movie_id, title, cast, and crew, and the movies.csv dataset file contains columns like genres, keywords, overview, budget etc.
 
-### Analyzing Documents with TI-IDF
+### Analyzing Documents with TF-IDF
+
+Term frequency is the relative frequency of any word in a document and is given by dividing term instances with total instances.
+
+The other part IDF called Inverse Document Frequency is the relative count of documents containing the term and is given as a log (number of documents/documents with the term).
+
+The overall importance of each word in the document in which they appear would be given by  TF * IDF.
+
+This will give you a matrix where each column represents a word in the overall vocabulary (all the words that appear in at least one document)
+and each row represents a movie.
+
+TF-IDF is useful in reducing the importance of words that occur frequently in our movie description function(create_join), genre, and keyword would in turn, reduce their significance in computing the final similarity score.
 
 
