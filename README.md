@@ -31,4 +31,45 @@ and each row represents a movie.
 
 TF-IDF is useful in reducing the importance of words that occur frequently in our movie description function(create_join), genre, and keyword would in turn, reduce their significance in computing the final similarity score.
 
+### Calculating the Cosine Similarity
+
+I have used cosine similarity to compute similarity. 
+I used cosine similarity score because it is independent of magnitude and is also relatively easy and fast to calculate.
+
+## Time to Make a Recommendation
+   ### Steps
+    1. Retrieve the index of the movie given its title.
+    2. Compute a list of cosine similarity scores for the target movie with all movies in the dataset then convert it into a list of tuples.
+    3. Sort this list of tuples based on similarity scores
+    4. Get the top 10 elements(or more) of this list.
+    5. Return the titles that correspond to the indices of the top elements.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
